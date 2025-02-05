@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITConnect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-image: url('student_group.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(75, 0, 130, 0.7); 
+            z-index: 1;
+        }       
+        header * {
+            position: relative;
+            z-index: 2;
+        }        
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .subtitle {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .content {
+            max-width: 800px;
+            width: 90%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        h2 {
+            color: #4b0082;
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            width: 30%;
+            margin: 1.5%;
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .run-python-btn {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #4b0082;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        .run-python-btn:hover {
+            background-color: #380062;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .python-section {
+            background-color:rgb(255, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <img src="vitconnect_logo.png" alt="VITConnect Logo" style="max-width: 200px;">
+        <h1>VITConnect</h1>
+        <p class="subtitle">Created by Team Techy</p>
+    </header>
+
+    <div class="content">
+        <h2>About VITConnect</h2>
+        <p>VITConnect is an innovative platform designed to enhance the connectivity and collaboration within the VIT community. Our mission is to create a seamless digital ecosystem that brings together students, faculty, and alumni, fostering a vibrant and supportive academic environment.</p>
+
+        <h2>Python Output</h2>
+        <div class="python-section">
+            <button class="run-python-btn" onclick="window.location.href='C:\\Users\\jaish\\Documents\\PP Yantra Hack 25\'\\New Web Page\\index.html'">
+                Run VITConnect Assistant
+            </button>
+            <div id="python-output">
+                <!-- Python output will appear here -->
+            </div>
+        </div>
+
+        <h2>About Us</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="team_member1.jpg" alt="Team Member 1">
+                <h3>Ganesh Y</h3>
+                <p>Techy 1</p>
+            </div>
+            <div class="team-member">
+                <img src="team_member2.jpg" alt="Team Member 2">
+                <h3>Jaishwanth A</h3>
+                <p>Techy 2</p>
+            </div>
+            <div class="team-member">
+                <img src="team_member3.jpg" alt="Team Member 3">
+                <h3>Keshav Sharma</h3>
+                <p>Techy 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
